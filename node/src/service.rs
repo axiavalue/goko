@@ -282,6 +282,9 @@ pub fn new_full<
 		// fails we take down the service with it.
 		task_manager
 			.spawn_essential_handle()
+            // GoKo PoH tick before block authoring
+            let mut goko_poh = GokoPoh::new();
+            goko_poh.tick();
 			.spawn_blocking("aura", Some("block-authoring"), aura);
 	}
 
