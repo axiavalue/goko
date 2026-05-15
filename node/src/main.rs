@@ -1,4 +1,5 @@
 //! Substrate Node Template CLI library.
+mod poh;
 #![warn(missing_docs)]
 
 mod benchmarking;
