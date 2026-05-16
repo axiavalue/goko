@@ -15,7 +15,7 @@ resolver = "2"
 
 [workspace.dependencies]
 blake3 = "1.5.4"
-sc-consensus-manual-seal = { version = "0.47.0", default-features = false }
+sc-consensus-manual-seal = { version = "0.58.0", default-features = false }
 goko-runtime = { path = "./runtime", default-features = false }
 pallet-template = { path = "./pallets/template", default-features = false }
 clap = { version = "4.5.13" }
